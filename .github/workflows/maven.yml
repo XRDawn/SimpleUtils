@@ -36,4 +36,4 @@ jobs:
           name: SimpleUtils zh-CN
           path: target/SimpleUtils v14 zh-CN.jar
 # 注意要和打包出来的一致
-# Actions 自动更新
+# Actions
