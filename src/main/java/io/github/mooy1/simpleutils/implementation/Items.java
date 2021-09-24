@@ -27,31 +27,31 @@ public final class Items {
     public static final SlimefunItemStack WRENCH = new SlimefunItemStack(
             "SIMPLE_WRENCH",
             Material.IRON_HOE,
-            "&6Simple Wrench",
-            "&eRight-Click to quickly dismantle cargo, capacitors, and machines"
+            "&6简易扳手",
+            "&e右键单击可快速拆卸货物、电容器和机器"
     );
     public static final SlimefunItemStack SIEVE = new SlimefunItemStack(
             "SIMPLE_SIEVE",
             Material.COMPOSTER,
-            "&6Simple Sieve",
-            "&7Sifts gravel into dusts and materials"
+            "&6简易漏筛",
+            "&7将砾石筛成粉尘和材料"
     );
     public static final SlimefunItemStack ELEVATOR = new SlimefunItemStack(
             "SIMPLE_ELEVATOR",
             Material.QUARTZ_BLOCK,
-            "&fSimple Elevator",
-            "&7Crouch to go down, Jump to go up"
+            "&f简易电梯",
+            "&7按蹲下楼，按跳上楼"
     );
     public static final SlimefunItemStack WORKBENCH = new SlimefunItemStack(
             "SIMPLE_WORKBENCH",
             Material.CRAFTING_TABLE,
-            "&6Simple Workbench",
-            "&7Can craft both vanilla and slimefun recipes"
+            "&6简易工作台",
+            "&7可以制作Slimefun和原版物品"
     );
 
     public static void setup(@Nonnull SimpleUtils plugin) {
         ItemGroup category = new ItemGroup(SimpleUtils.createKey("main"),
-                new CustomItemStack(Material.COMPOSTER, "&6Simple Utils"), 0);
+                new CustomItemStack(Material.COMPOSTER, "&6简易工具"), 0);
 
         new Workbench(category, WORKBENCH, RecipeType.ENHANCED_CRAFTING_TABLE,
                 Arrays.copyOf(new ItemStack[] {new ItemStack(Material.CRAFTING_TABLE)}, 9)

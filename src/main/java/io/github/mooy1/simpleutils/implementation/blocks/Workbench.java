@@ -63,7 +63,7 @@ public final class Workbench extends MenuBlock implements Listener {
         if (Slimefun.getMinecraftVersion().isBefore(MinecraftVersion.MINECRAFT_1_17)) {
             craftItem = Workbench::craftItemOld;
             Scheduler.run(() -> SimpleUtils.log(Level.WARNING,
-                    "The SimpleWorkbench may not be able to craft vanilla recipes in mc 1.16"));
+                    "便携工作台可能无法在1.16制作物品"));
         } else {
             craftItem = Workbench::craftItem;
         }
